@@ -23,5 +23,5 @@ function CalcularMasa(){
 
 
 function Formulas(){
-    alert("Fuerza->Masa x Aceleracion\nMasa->Fuerza : Aceleracion\nAceleracion->Fuerza : Masa")
+    alert("Fuerza->Masa x Aceleracion\nMasa->Fuerza : Aceleracion\nAceleracion->Fuerza-Fuerza de rozamiento : Masa")
 }
