@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts.js"></script>
+    <style>
+    .cuerpo{
+        width: 100px;
+        height: 100px;
+        border: 3px solid #555;
+        position: absolute;
+    top: 15%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+     border-bottom-style: none;
+     
+    }
+    .superficie{
+        width: 1000px;
+        height: 100px;
+        border: 3px solid rgb(255, 255, 255);
+        position: absolute;
+    top: 15%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+        border-bottom: #555 solid 4px;
+        border-top-color: (255,255,255);
+        border-top-style: none;
+    }
+    .Botones{
+        border: #555 solid 1px;
+        position: absolute;
+        top: 150px;
+    }
+    
+    
+   
+    </style>
+</head>
+<body>
+    <div class="cuerpo"></div>
+    <div class="superficie"></div>
+    <div class="masa" ><textarea id="masa" placeholder="Introduzca la masa del cuerpo" cols="30" rows="1"></textarea></div>
+    <div class="gravedad"><textarea id="gravedad" placeholder="Introduzca la gravedad" cols="30" rows="1"></textarea></div>
+    <div class="fuerza"><textarea id="fuerza" placeholder="Introduzca la fuerza aplicada" cols="30" rows="1"></textarea></div>
+    <div class="tiempo"><textarea id="tiempo" placeholder="Introduzca el tiempo" cols="30" rows="1"></textarea></div>
+    <div class="aceleracion"><textarea id="aceleracion" placeholder="Introduzca la acelereacion" cols="30" rows="1"></textarea></div>
+    <div class="velocidad_inicial"><textarea placeholder="Introduzca la velocidad inicial" id="VelInicial" cols="30" rows="1"></textarea></div>
+    <div class="velocidad_final"><textarea placeholder="Introduzca la velocidad final" id="VelFinal" cols="30" rows="1"></textarea></div>
+    <div><textarea placeholder="Introduzca el coeficiente de rozamiento" id="cdr" cols="38" rows="1"></textarea></div>
+    <div class="Unidades"><button onclick="unidades()">Mostrar unidades</button></div>
+    <!--<div class="movimiento"><button>Calcular si se mueve</button></div>!-->
+    <div><button onclick="CalcularFuerza()">Calcular fuerza</button></div>
+    <div><button onclick="CalcularAceleracion()">Calcular aceleracion</button></div>
+    <div><button onclick="Formulas()">Formulas</button></div>
+    <div><h3>IMPORTANTE: En caso de despreciarse el rozamiento especificar 0 en dicha casilla.</h3></div>
+    <div><h3>IMPORTANTE: En caso de escribir algun numero decimal usar puntos y no comas.</h3></div>
+</body>
+</html>
