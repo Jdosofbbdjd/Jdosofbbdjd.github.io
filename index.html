@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de fuerzas</title>
-    <script src="scripts.js"></script>
     <style>
     .cuerpo{
         width: 100px;
@@ -41,8 +40,10 @@
     </style>
 </head>
 <body>
-    <div class="cuerpo"></div>
-    <div class="superficie"></div>
+    <div id="DivCambiante">
+        <div class="cuerpo"></div>
+        <div class="superficie"></div>
+    </div>
     <div class="masa" ><textarea id="masa" placeholder="Introduzca la masa del cuerpo" cols="30" rows="1"></textarea></div>
     <div class="gravedad"><textarea id="gravedad" placeholder="Introduzca la gravedad" cols="30" rows="1"></textarea></div>
     <div class="fuerza"><textarea id="fuerza" placeholder="Introduzca la fuerza aplicada" cols="30" rows="1"></textarea></div>
@@ -54,9 +55,12 @@
     <div class="Unidades"><button onclick="unidades()">Mostrar unidades</button></div>
     <!--<div class="movimiento"><button>Calcular si se mueve</button></div>!-->
     <div><button onclick="CalcularFuerza()">Calcular fuerza</button></div>
-    <div><button onclick="CalcularAceleracion()">Calcular aceleracion</button></div>
+    <div><button onclick="CalcularAceleracionConFM()">Calcular aceleracion mediante la fuerza y la masa</button></div>
+    <div><button onclick="CalcularAceleracionConViVf()">Calcular aceleracion mediante la velocidad inicial la velocidad final y el tiempo</button></div>
     <div><button onclick="Formulas()">Formulas</button></div>
     <div><h3>IMPORTANTE: En caso de despreciarse el rozamiento especificar 0 en dicha casilla.</h3></div>
     <div><h3>IMPORTANTE: En caso de escribir algun numero decimal usar puntos y no comas.</h3></div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
