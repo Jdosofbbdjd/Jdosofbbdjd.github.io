@@ -8,7 +8,8 @@ function unidades(){
 }
 
 function CalcularFuerza(){
-    let fuerza_interna= (parseFloat(document.getElementById("masa").value)*parseFloat(document.getElementById("aceleracion").value))-parseFloat(document.getElementById("cdr").value)
+    let fuerzaderozamiento2= parseFloat(document.getElementById("cdr").value)*parseFloat(document.getElementById("masa").value)*parseFloat(document.getElementById("gravedad").value)
+    let fuerza_interna= (parseFloat(document.getElementById("masa").value)*parseFloat(document.getElementById("aceleracion").value))+fuerzaderozamiento2
     alert(fuerza_interna+" Newtons")
 }
 
@@ -32,6 +33,6 @@ function CalcularAceleracionConViVf(){
 }
 
 function Formulas(){
-    alert("Fuerza->Masa x Aceleracion\nMasa->Fuerza : Aceleracion\nAceleracion->(Fuerza - Fuerza de rozamiento) : Masa\nAceleracion->(Velocidad final - Velocidad inicial) : Tiempo")
+    alert("Fuerza->Masa x Aceleracion + Fuerza de rozamiento\nMasa->Fuerza : Aceleracion\nAceleracion->(Fuerza - Fuerza de rozamiento) : Masa\nAceleracion->(Velocidad final - Velocidad inicial) : Tiempo")
 
 }
